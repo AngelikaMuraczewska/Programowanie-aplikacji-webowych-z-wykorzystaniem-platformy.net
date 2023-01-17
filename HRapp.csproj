@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Pages\Shared\Nowy folder1\**" />
+    <Compile Remove="Pages\Shared\Nowy folder\**" />
+    <Content Remove="Pages\Shared\Nowy folder1\**" />
+    <Content Remove="Pages\Shared\Nowy folder\**" />
+    <EmbeddedResource Remove="Pages\Shared\Nowy folder1\**" />
+    <EmbeddedResource Remove="Pages\Shared\Nowy folder\**" />
+    <None Remove="Pages\Shared\Nowy folder1\**" />
+    <None Remove="Pages\Shared\Nowy folder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\IdentityDbContext.cs" />
+    <Compile Remove="Data\IdentitySeedData.cs" />
+    <Compile Remove="Pages\Models\Pracownicy.cs" />
+    <Compile Remove="Pages\Shared\Pracownicy.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\Shared\Pracownicy.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Nowy folder\" />
+  </ItemGroup>
+
+</Project>
