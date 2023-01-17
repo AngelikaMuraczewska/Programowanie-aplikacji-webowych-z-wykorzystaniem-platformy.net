@@ -1,0 +1,33 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+img.align-center {
+    display: block;
+    margin: 0px auto;
+}
+img.medium{
+    width: 500px;
+    height: 250px;
+}
+.logowanie{
+    float: centre
+}
+#submit{
+    text-align: right
+}
